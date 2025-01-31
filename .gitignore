@@ -77,7 +77,7 @@ node_modules
 
 *.php
 *.js
-*.css
+# *.css
 *.json
 *.png
 *.md

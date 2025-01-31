@@ -1,0 +1,6 @@
+/* Get all the texts in the various tinymce's the same. */
+.block-editor-block-list__block {
+    padding: 20px!important;
+} 
+
+/*.components-select-control__input { height: initial!important; }*/
