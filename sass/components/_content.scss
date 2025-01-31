@@ -63,7 +63,9 @@
           display: block;
           font-size: 30px;
         }
-
+        @media screen and (max-width: 600px) {
+          font-size: 28px;
+        }
         transform: rotate(349deg);
         font-family: $miami-font;
         color: $miami-pink;
