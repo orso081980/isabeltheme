@@ -36,6 +36,7 @@
         .hover-text {
           h1 {
             font-family: $exo;
+            font-optical-sizing: auto;
             color: $white-color;
             font-size: 19px;
             margin-bottom: 13px;
@@ -223,6 +224,7 @@
 .about {
   * {
     font-family: $exo;
+    font-optical-sizing: auto;
   }
   .marco {
     h1,h2 {
@@ -450,6 +452,7 @@
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: $miami-pink;
       font-family: $exo;
+      font-optical-sizing: auto;
       color: $white-color;
       margin-bottom: 1rem;
       font-size: 22px;
@@ -460,6 +463,7 @@
   #my-form-status {
     color: $miami-violet;
     font-family: $exo;
+    font-optical-sizing: auto;
     font-size: 19px;
     margin-top: 2rem;
     display: inline-block;

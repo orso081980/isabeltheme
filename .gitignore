@@ -65,7 +65,8 @@
 
 # wp-config.php
 # # pipelines 2024
-
+*.gitattributes
+.gitattributes
 vendor
 node_modules
 .DS_Store
@@ -73,7 +74,7 @@ node_modules
 /js
 /lazy-blocks
 /assets
-.gitattributes
+
 *.php
 *.js
 *.css
