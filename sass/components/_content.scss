@@ -1,0 +1,468 @@
+#information {
+  background-color: $miami-black;
+
+  .home {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .row {
+    &:last-child {
+      .square {
+        border-top: 1px solid $miami-pink;
+        border-bottom: none;
+      }
+    }
+
+    .square {
+      position: relative;
+      transition: background-color 2s ease;
+      margin: 0px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 50vh;
+      color: $white-color;
+      padding: 4rem;
+      border: 1px solid $miami-pink;
+      transform: rotate(349deg);
+      border-top: none;
+
+      .logo {
+        transform: rotate(355deg);
+      }
+
+      &#company {
+        .hover-text {
+          h1 {
+            font-family: $exo;
+            color: $white-color;
+            font-size: 19px;
+            margin-bottom: 13px;
+          }
+
+          a {
+            color: $white-color;
+          }
+        }
+      }
+
+      &:hover {
+        background-color: $miami-violet;
+      }
+
+      &:nth-child(1) {
+        border-left: none;
+      }
+
+      h2,
+      h1 {
+        span {
+          text-align: center;
+          display: block;
+          font-size: 30px;
+        }
+
+        transform: rotate(349deg);
+        font-family: $miami-font;
+        color: $miami-pink;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: lowercase;
+        font-size: 33px;
+        text-transform: uppercase;
+      }
+
+      p,
+      a {
+        transform: rotate(349deg);
+        font-family: $exo;
+        font-optical-sizing: auto;
+        font-size: 19px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: lowercase;
+        text-transform: uppercase;
+      }
+
+      span {
+        font-size: 19px;
+      }
+
+      a {
+        color: $white-color;
+      }
+
+      .default-text {
+        opacity: 1;
+        transition: opacity 1.5s ease;
+      }
+
+      .hover-text {
+        opacity: 0;
+        position: absolute;
+        transition: opacity 1.5s ease;
+
+        &.contact {
+          p {
+            color: $white-color;
+            margin-bottom: 13px;
+          }
+
+        }
+
+        p {
+          color: $white-color;
+          margin-bottom: 13px;
+        }
+      }
+
+      &:hover .default-text {
+        opacity: 0;
+      }
+
+      &:hover .hover-text {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.other-services {
+  h2 {
+    margin: 6rem 0 4rem;
+    font-family: $miami-font;
+    font-weight: 700;
+    color: $miami-cyan;
+    display: inline-block;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid $miami-cyan;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px
+  }
+
+  h3 {
+    color: $miami-pink;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  .row {
+    padding-bottom: 3rem;
+  }
+
+  .details {
+    padding-left: 19px;
+
+    p {
+      margin-bottom: 1rem;
+
+      span {
+        color: $miami-pink;
+        border-radius: 19px;
+        padding: 8px 16px 6px;
+        letter-spacing: .06px;
+        font-weight: 500;
+        border-radius: 32px;
+        border: 2px solid $miami-pink;
+        background-color: $white-color;
+        display: inline-block;
+        box-shadow: 5px 5px 0 0 $miami-pink;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        position: relative;
+        -webkit-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+
+        &:before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border-radius: 32px;
+          background: $miami-pink;
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+          -webkit-transition-property: transform;
+          transition-property: transform;
+          -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+          -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: $white-color;
+        }
+
+        &:hover:before,
+        &:focus:before,
+        &:active:before {
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+
+  .default-text {
+    padding-bottom: 1rem;
+  }
+}
+
+.about {
+  * {
+    font-family: $exo;
+  }
+  .marco {
+    h1,h2 {
+      font-family: $miami-font;
+    }
+  }
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 9rem;
+    font-size: 19px;
+    color: $miami-violet;
+    li {
+      padding-bottom: 1.5rem;
+
+      a {
+        font-size: 19px;
+        font-weight: 700;
+        color: $miami-pink;
+        font-family: $miami-font;
+      }
+    }
+  }
+
+  h1 {
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+    color: $miami-violet;
+  }
+
+  h2 {
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+    color: $miami-yellow;
+  }
+
+  h3 {
+    padding-bottom: .8rem;
+  }
+
+  h4 {
+    padding-bottom: .8rem;
+  }
+
+  p {
+    padding-bottom: 1rem;
+    color: $miami-black;
+  }
+
+  .details {
+    margin-bottom: 4rem;
+
+    .button {
+      a {
+        border-radius: 10px;
+        padding: 4px 6px;
+        letter-spacing: .06px;
+        font-weight: 500;
+        border-radius: 32px;
+        background-color: $white-color;
+        display: inline-block;
+        margin-bottom: 14px;
+        transition: all 0.5s ease;
+        &:nth-child(4n) {
+          box-shadow: 2px 2px 0 0 $miami-pink;
+          &:hover {
+            background-color: $miami-pink;
+            color: $white-color;
+          }
+        }
+
+        &:nth-child(4n+1) {
+          box-shadow: 2px 2px 0 0 $miami-violet;
+          &:hover {
+            background-color: $miami-violet;
+            color: $white-color;
+          }
+        }
+
+        &:nth-child(4n+2) {
+          box-shadow: 2px 2px 0 0 $miami-yellow;
+          &:hover {
+            background-color: $miami-yellow;
+            color: $white-color;
+          }
+        }
+
+        &:nth-child(4n+3) {
+          box-shadow: 2px 2px 0 0 $miami-cyan;
+          &:hover {
+            background-color: $miami-cyan;
+            color: $white-color;
+          }
+        }
+
+        span {
+          font-size: 15px;
+          font-weight: 600;
+        }
+      }
+
+    }
+
+    .time-place {
+      p {
+        padding-bottom: 2px;
+      }
+    }
+
+    &>div {
+      margin-bottom: 4rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .mansions {
+    padding-bottom: 1rem;
+  }
+
+  .skills {
+    a {
+      &:nth-child(4n) {
+        span {
+          background-color: rgba($miami-pink, 0.9);
+        }
+      }
+
+      &:nth-child(4n+1) {
+        span {
+          background-color: rgba($miami-cyan, 0.9);
+        }
+      }
+
+      &:nth-child(4n+2) {
+        span {
+          background-color: rgba($miami-violet, 0.9);
+        }
+      }
+
+      &:nth-child(4n+3) {
+        span {
+          background-color: rgba($miami-yellow, 0.9);
+        }
+      }
+    }
+
+    span {
+      color: $white-color;
+      border-radius: 11px;
+      background-color: rgba($miami-cyan, .8);
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      padding: 2px 7px;
+      text-transform: lowercase;
+    }
+  }
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.mapbox {
+  iframe {
+    border: none;
+        
+        display: block;
+        margin: 0;
+        padding: 0;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.contact {
+  h1 {
+    font-family: $miami-font;
+    color: $miami-pink;
+  }
+
+  background-color: $miami-black;
+  padding: 3rem;
+  border-radius: 20px;
+
+  label {
+    color: $white-color;
+  }
+
+  .form-control {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 2rem;
+    padding: 9px 2px 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid $miami-pink;
+    color: $white-color;
+  }
+
+  input {
+    color: $white-color;
+  }
+
+  .btn-primary {
+    color: $white-color;
+    font-family: $miami-font;
+    font-size: 19px;
+  }
+
+  .details {
+
+    p,
+    a {
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $miami-pink;
+      font-family: $exo;
+      color: $white-color;
+      margin-bottom: 1rem;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+  }
+  #my-form-status {
+    color: $miami-violet;
+    font-family: $exo;
+    font-size: 19px;
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,100 @@
+footer {
+	font-family: $exo;
+	padding: 6vh 0;
+	background-color: $miami-black;
+
+	.social-circle {
+		padding: 1rem 0;
+
+		ul {
+			padding-left: 0;
+			list-style: none;
+			display: flex;
+			gap: 10px;
+			margin-bottom: 0;
+
+			li {
+				display: inline-block;
+				&:hover {
+					a {
+						&.instagram {
+							svg {
+								path {
+									transition: fill 0.5s ease-in-out;
+									fill: $instagram;
+								}
+
+							}
+						}
+						&.linkedin {
+							svg {
+								path {
+									transition: fill 0.5s ease-in-out;
+									fill: $linkedin;
+								}
+							}
+						}
+						&.twitter {
+							svg {
+								path {
+									transition: fill 0.5s ease-in-out;
+									fill: $twitter;
+								}
+							}
+						}
+						&.github {
+							svg {
+								path {
+									transition: fill 0.5s ease-in-out;
+									fill: $github;
+								}
+							}
+						}
+					}
+				}
+				a {
+					svg {
+						height: 26px;
+					}
+					display: flex;
+					align-items: center;
+					width: 60px;
+					height: 60px;
+					border-radius: 50%;
+					transition: background-color 0.3s ease;
+				}
+			}
+		}
+	}
+
+	#footer-info {
+		text-align: right;
+		@media screen and (max-width: 600px) {
+			padding-top: 2rem;
+			text-align: left;
+		}
+		* {
+			color: $white-color;
+		}
+
+		a {
+			transition: all 0.5s ease;
+			&:hover {
+				color: $miami-pink;
+			}
+		}
+	}
+
+	#copyright {
+		* {
+			color: $white-color;
+		}
+
+		a {
+			transition: all 0.5s ease;
+			&:hover {
+				color: $miami-pink;
+			}
+		}
+	}
+}

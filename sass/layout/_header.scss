@@ -1,0 +1,169 @@
+body:not(.home) {
+    header {
+        background-color: $miami-black;
+    }
+}  
+header {
+    padding: 44px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    .logo {
+        transform: rotate(338deg);
+    }
+    &.changebg {
+        background-color: $miami-black;
+    }
+}
+
+.menu-button-wrapper {
+    float: right;
+    @media screen and (max-width: 600px) {
+        position: fixed;
+        float: right;
+        right: 24px;
+        top: 48px;
+    }
+    .menu-button {
+        transform: rotate(349deg);
+        cursor: pointer;
+
+        span {
+            background-color: $miami-pink;
+            display: block;
+            height: 5px;
+            margin: 5px 0;
+            width: 54px;
+            border-radius: 39px;
+            transition: 0.4s;
+
+            &:nth-child(1).change {
+                -webkit-transform: rotate(-45deg) translate(-4px, 5px);
+                transform: rotate(-45deg) translate(-4px, 5px);
+                background-color: $miami-cyan;
+            }
+
+            &:nth-child(2).change {
+                opacity: 0;
+            }
+
+            &:nth-child(3).change {
+                -webkit-transform: rotate(45deg) translate(-8px, -8px);
+                transform: rotate(45deg) translate(-8px, -8px);
+                background-color: $miami-cyan;
+            }
+        }
+    }
+}
+
+.full-menu-page {
+    display: none;
+    position: fixed;
+    top: 129px;
+    bottom: 0;
+    background-color: $white-color;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    @media screen and (max-width: 600px) {
+        top: 128px;
+    }
+    &.open {
+        display: block;
+    }
+
+    #menu-primary-menu {
+        text-align: left;
+
+        li {
+            padding-left: 0;
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+            list-style: none;
+
+            a {
+                @media screen and (max-width: 600px) {
+                    font-size: 53px;
+                }
+                font-size: 4rem;
+                color: $miami-violet;
+                font-family: $limelight;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+}
+
+.social {
+    .col-md-3 {
+        position: relative;
+        padding: 0;
+
+        p {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 10px;
+            width: 100%;
+
+            &.instagram {
+                background: $instagram;
+                transition: background 0.5s linear;
+                &:hover {
+                    background: radial-gradient($instagram, rgba($instagram, 0.4))
+                }
+            }
+
+            &.twitter {
+                background: $twitter;
+                transition: background 0.5s linear;
+                &:hover {
+                    background: radial-gradient($twitter, rgba($twitter, 0.4))
+                }
+            }
+
+            &.linkedin {
+                background: $linkedin;
+                transition: background 0.5s linear;
+                &:hover {
+                    background: radial-gradient($linkedin, rgba($linkedin, 0.4))
+                }
+            }
+
+            &.github {
+                background: $github;
+                transition: background 0.5s linear;
+                &:hover {
+                    background: radial-gradient($github, rgba($github, 0.4))
+                }
+            }
+        }
+
+        img {
+            transform: rotate(90deg);
+            padding-top: 6px;
+            margin-top: 6px;
+            vertical-align: initial;
+        }
+
+        a {
+            font-size: 38px;
+            font-weight: 800;
+            color: $white-color;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

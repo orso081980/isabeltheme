@@ -1,0 +1,175 @@
+.single-post {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .feature-image {
+        padding-bottom: 45px;
+    }
+    main {
+        padding: 45px 65px;
+        border-radius: 12px;
+        background-color: $white-color;
+        max-width: 960px;
+        margin: auto;
+        box-shadow: 0 4px 19px 0 rgba($black-color, .15);
+        .wp-block-post-title {
+            margin: 2rem 0;
+        }
+        .author-wrapper {
+            margin-bottom: 45px;
+            overflow: auto;
+
+            .author-avatar {
+                float: left;
+                margin-right: 20px;
+
+                img {
+                    border-radius: 50%;
+                }
+            }
+
+            .author-info {
+                float: left;
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.single-integrations {
+    .body {
+        padding-bottom: 4rem;
+        .col-md-3 {
+            aside {
+                position: relative;
+                top: -6rem;
+                .logo {
+                    img {
+                        width: 100%;
+                        padding: 74px;
+                        background-color: $white-color;
+                        border-radius: 20px;
+                        box-shadow: 0 10px 36px rgba($black-color, .05);
+                    }
+                }
+                h4 {
+                    color: $grey-color;
+                    font-size: 11px;
+                    text-transform: uppercase;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid $grey-color;
+                    margin-bottom: 10px;
+                }
+                .links {
+                    padding: 0;
+                    padding-bottom: 2rem;
+                    margin-bottom: 0;
+                    li {
+                        list-style: none;
+                        a {
+                            font-size: 14px;
+                            font-weight: 700;
+                            color: $black-color;
+                        }
+                    }
+                }
+                .home-button {
+                    margin-top: 3rem;
+                    margin-bottom: 3rem;
+                    .btn {
+                        background: $black-color;
+                        width: 100%;
+                        color: $white-color;
+
+                        a {
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+            .tags {
+                padding-bottom: 2rem;
+                .pill.ib {
+                    background-color: $black-color;
+                    border-radius: 20px;
+                    padding: 3px 12px;
+                    font-size: 13px;
+                    display: inline-block;
+                    margin-right: 10px;
+                    margin-bottom: 8px;
+                    font-weight: 700;
+                    a {
+                        -o-text-overflow: ellipsis;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        font-size: 13px;
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+        .col-md-9 {
+            img {
+                max-width: 100%;
+            }
+            .page-content {
+                padding-top: 4rem;
+                padding-left: 3rem;
+                padding-right: 3rem;
+                .breadcrumb {
+                    list-style: none;
+                    margin-bottom: 25px;
+                    text-transform: uppercase;
+                    .separator {
+                        padding-left: 5px;
+                        padding-right: 5px;
+                    }
+                    li {
+                        &:last-child a {
+                            color: $black-color;
+                        }
+
+                        a {
+                            font-size: 12px;
+                            color: $grey-color;
+                        }
+                    }
+                }
+                section {
+                    margin-bottom: 2rem;
+                }
+                .title {
+                    margin-bottom: 40px;
+                }
+                h2.subtitle {
+                    font-size: 16px;
+                    margin-bottom: 40px;
+                    color: $grey-color;
+                    font-weight: 400;
+                }
+                h2 {
+                    font-size: 16px;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                }
+                .markdown {
+                    margin-bottom: 50px;
+                }
+                p {
+                    color: $grey-color;
+                }
+                iframe {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}

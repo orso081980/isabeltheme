@@ -1,0 +1,82 @@
+# wp-config.php
+# node_modules
+# vendor
+# .idea
+# *.sql
+# wp-content/uploads
+
+# .htaccess
+# *.initialized
+# *.restored
+# */.DS_Store
+# .idea
+# .DS_store
+
+# wp-content/uploads-webpc
+# /index.php
+# /license.txt
+# /readme.html
+# /wp-activate.php
+# /wp-comments-post.php
+# /wp-config-sample.php
+# /wp-admin
+# /wp-includes
+
+# /wp-login.php
+# /wp-load.php
+# /wp-mail.php
+# /wp-settings.php
+# /wp-signup.php
+# /wp-trackback.php
+# /xmlrpc.php
+# /wp-blog-header.php
+# /wp-cron.php
+# /wp-links-opml.php
+
+# !wp-content/plugins
+# wp-content/plugins/*
+
+# !wp-content/plugins/plugins.sh
+# # !wp-content/plugins/project
+# # !wp-content/plugins/project/*
+# !wp-content/plugins/isafigs
+# !wp-content/plugins/isafigs/*
+# !wp-content/plugins/polylang-pro
+# !wp-content/plugins/polylang-pro/*
+# !wp-content/plugins/c3-cloudfront-clear-cache
+# !wp-content/plugins/c3-cloudfront-clear-cache/*
+# # !wp-content/plugins/isaforms
+# # !wp-content/plugins/isaforms/*
+# # !wp-content/plugins/isaforms/vendor
+# # !wp-content/plugins/isaforms/vendor/*
+
+# wp-config-local.php
+# wp-content/languages
+# wp-content/upgrade
+# wp-content/mu-plugins
+
+# wp-content/plugins/hello.php
+# wp-content/plugins/akismet/
+
+# wp-content/themes/twentytwenty/
+# wp-content/themes/twentynineteen/
+# wp-content/themes/twentyseventeen/
+# # wp-content/themes/project/css/custom.css
+
+# wp-config.php
+# # pipelines 2024
+
+vendor
+node_modules
+.DS_Store
+/classes
+/js
+/lazy-blocks
+/assets
+.gitattributes
+*.php
+*.js
+*.css
+*.json
+*.png
+*.md

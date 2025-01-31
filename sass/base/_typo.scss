@@ -1,0 +1,82 @@
+// $poppins: "Poppins", sans-serif;
+// $fascinate: "Fascinate", serif;
+// $anton: "Anton", serif;
+$exo: "Exo", serif;
+$miami-font: "Permanent Marker", serif;
+$limelight: "Limelight", serif;
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-family: $limelight;
+    letter-spacing: 1px;
+  }
+}
+
+h1,
+.h1 {
+  font-size: 2.44rem;
+
+  strong,
+  em {
+    font-weight: 700;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 2.11rem;
+
+  strong,
+  em {
+    font-weight: 700;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 1.22rem;
+
+  strong,
+  em {
+    font-weight: 700;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 1rem;
+
+  strong,
+  em {
+    font-weight: 700;
+  }
+}
+
+h5,
+.h5 {
+  font-size: 0.88rem;
+
+  strong,
+  em {
+    font-weight: 700;
+  }
+}
+
+h6,
+.h6 {
+  font-size: 0.77rem;
+
+  strong,
+  em {
+    font-weight: 700;
+  }
+}
+
+p, a, input, label, small, strong, span, div, body, html, li, ul {
+  font-family: $exo;
+  font-size: 16px;
+}
+
+a {
+  color: $black-color;
+}
